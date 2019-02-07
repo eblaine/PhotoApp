@@ -5,8 +5,37 @@ export default class Slideshow extends Component<SlideshowProps> {
   render() {
     // TODO: find some images
     // TODO: display them with https://react-bootstrap.netlify.com/components/carousel/
-    return <div>slideshow coming soon</div>;
+    return (
+      <div>
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://uploads.codesandbox.io/uploads/user/d763b02f-c8a1-4529-bb6c-15832c4e793d/tlNZ-IMG_0369.jpg"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>Monument Valley</h3>
+              <p />
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://uploads.codesandbox.io/uploads/user/d763b02f-c8a1-4529-bb6c-15832c4e793d/ekeU-IMG_0387.jpg"
+              alt="Third slide"
+            />
+
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p />
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+    );
   }
 }
 
 type SlideshowProps = {};
+//
