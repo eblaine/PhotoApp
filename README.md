@@ -1,2 +1,0 @@
-# PhotoApp
-Created with CodeSandbox
