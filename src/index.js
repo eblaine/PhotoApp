@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Link from "./components/Link";
+import Nature from "./components/Nature";
+import AboutMe from "./components/AboutMe";
 import { HashRouter as Router, Route, Redirect } from "react-router-dom";
 
 import "./styles.css";
@@ -16,7 +17,8 @@ function App() {
           <Route exact path="/" render={() => <Redirect to="/Home" />} />
 
           <Route path="/home" component={Home} />
-          <Route path="/link" component={Link} />
+          <Route path="/Nature" component={Nature} />
+          <Route path="/AboutMe" component={AboutMe} />
         </div>
       </Router>
     </div>
